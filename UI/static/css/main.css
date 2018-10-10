@@ -6,10 +6,10 @@ body {
 }
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 100px);
+    grid-template-columns: repeat(12, 80px);
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 30px;
+    grid-column-gap: 20px;
 }
 .masthead {
     background-color: #2ecc71;
@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 5rem;
+    padding: 0.3rem 3rem;
 }
 .site-title h1 {
     margin: 0;
@@ -44,8 +44,8 @@ body {
     margin: 0 0.7rem;
 }
 .boxcover {
-    width: 300px;
-    padding: 40px;
+    width: 350px;
+    padding: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
