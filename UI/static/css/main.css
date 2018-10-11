@@ -136,6 +136,25 @@ hr {
 border: 1px solid #f1f1f1;
 margin-bottom: 25px;
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background-color: lightgreen;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+}
+tr:hover {
+    background-color: #f0c0c0;
+}
+.sales-records {
+    overflow-x:auto;
+}
 .admin-footer {
     display: flex;
     grid-area: footer;
