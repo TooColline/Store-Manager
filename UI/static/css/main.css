@@ -113,7 +113,7 @@ tr:hover {
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 15px;
+    padding: 10px 10px;
 }
 #myInput {
     width: 100%;
@@ -121,6 +121,25 @@ td, th {
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
+}
+.edit, .delete {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.edit {
+    background: #2199e8;
+    color: #ffffff;
+}
+.edit:hover {
+    background: #147dc2;
+}
+  
+.delete {
+    background: #EC5840;
+    color: #ffffff;
+}
+.delete:hover {
+    background: #e23317;
 }
 .sales-records {
     overflow-x:auto;

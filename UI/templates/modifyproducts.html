@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store Owner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
+    <script src="../static/js/main.js"></script>
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="store-attendant">
+        <header class="storeattendant-header">
+            <a href="#" class="logo"><h1>Store Owner</h1></a>
+            <div class="topnav-items">
+                <button class="btn btn--primary">Add Attendant</button>
+                <a href="#" class="profile">Profile</a>
+                <a href="#" class="logout">Log Out</a>
+            </div>
+        </header>
+        <nav class="sidenav">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Admin Dashboard</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Add Store Attendant</a>
+                </li>
+                <li class="menu-item">
+                    <a href="salesrecords.html" class="menu-link">Sale Records</a>
+                </li>
+                <li class="menu-item">
+                    <a href="allproducts.html" class="menu-link">All products</a>
+                </li>
+                <li class="menu-item">
+                    <a href="modifyproducts.html" class="menu-link">Modify Products</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="storeattendant-main">
+            <h2>All Products</h2>
+            <div class="sales-records">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search individual products by name..">
+                <table id="records-table">
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Cost Price</th>
+                        <th>Selling Price</th>
+                        <th>Quantity (Inventory)</th>
+                        <th>Quantity (Allowed)</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Shoes</td>
+                        <td>Clothing</td>
+                        <td>KSh. 1000</td>
+                        <td>KSh. 1100</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Handbag</td>
+                        <td>Accessories</td>
+                        <td>KSh. 2000</td>
+                        <td>KSh. 2100</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Belt</td>
+                        <td>Clothing</td>
+                        <td>KSh. 800</td>
+                        <td>KSh. 850</td>
+                        <td>6</td>
+                        <td>50</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Shirt</td>
+                        <td>Clothing</td>
+                        <td>KSh. 1500</td>
+                        <td>KSh. 1500</td>
+                        <td>6</td>
+                        <td>30</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cooking oil</td>
+                        <td>Food</td>
+                        <td>KSh. 450</td>
+                        <td>KSh. 450</td>
+                        <td>10</td>
+                        <td>70</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Shower Heater</td>
+                        <td>Electronics</td>
+                        <td>KSh. 1350</td>
+                        <td>KSh. 1400</td>
+                        <td>2</td>
+                        <td>20</td>
+                        <td>
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer class="storeattendant-footer">
+            <span>&copy; Store Manager 2018</span>
+        </footer>
+    </div>
+</body>
+</html>
