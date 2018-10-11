@@ -261,6 +261,7 @@ a {
 }
 .fig-item:hover i, .fig-item.hover i {
     background-color: #2980b9;
+}
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 80px);
