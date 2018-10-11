@@ -77,3 +77,25 @@ a {
 .btn:hover {
     background: #2ecc71;
 } 
+.sidenav {
+    flex: 0 0 250px;
+    grid-area: nav;
+    background-color: lightgrey;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-item {
+    border-bottom: 1px solid darkgrey;
+}
+.menu-link {
+    display: block;
+    padding: 1rem 2rem;
+    color: black;
+    text-decoration: none;
+}
+.menu-link:hover, .menu-link:focus {
+    color: #fff;
+    background-color: #2ecc71;
+}
