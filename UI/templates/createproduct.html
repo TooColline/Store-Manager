@@ -43,21 +43,32 @@
             <div class="dashboard">
                 <form action="">
                     <div class="container">
-                        <h3>Please fill in this form to register a store attendant.</h3>
+                        <h3>Please fill in this form to register a product.</h3>
                         <hr>
 
-                        <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="itemName"><b>Item Name</b></label>
+                        <input type="text" placeholder="Enter Item Name" name="itemName" required>
                     
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" required>
-                    
-                        <label for="psw-repeat"><b>Confirm Password</b></label>
-                        <input type="password" placeholder="Confirm Password" required>
+                        <label for="price"><b>Cost Price</b></label>
+                        <input type="text" placeholder="Enter Item Price" name="price" required>
+
+                        <label for="price"><b>Selling Price</b></label>
+                        <input type="text" placeholder="Enter Item Price" name="price" required>
+
+                        <label for="quantity"><b>Quantity</b></label>
+                        <input type="text" placeholder="Enter Item Quantity" name="quantity" required>
+
+                        <label for="category"><b>Category</b></label><br>
+                        <div>
+                            <select name="selectCategory" id="selectCategory">
+                                <option value="">Clothing</option>
+                                <option value="">Shoes</option>
+                                <option value="">Electronics</option>
+                                <option value="">Accessories</option>
+                            </select>
+                        </div>
                         <hr>
-                    
-                        <p>By creating this account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                        <button type="submit" class="btn btn--primary">Register</button>
+                        <button type="submit" class="btn btn--primary">Add Product</button>
                     </div>
                 </form>
             </div>
