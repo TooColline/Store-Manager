@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgrey;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 80px);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+}
+.masthead {
+    background-color: #2ecc71;
+    color: #fff;
+    grid-column: 1/-1;
+}
+.masthead-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 3rem;
+}
+.site-title h1 {
+    margin: 0;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: rgba(19, 16, 16, 0.8);
+}
+.menu li {
+    margin: 0 0.7rem;
+}
+.boxcover {
+    width: 350px;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    text-align: center;
+}
+.boxcover h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.boxcover input[type = "text"], .boxcover input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.boxcover input[type = "text"]:focus, .boxcover input[type = "password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+.boxcover input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.boxcover input[type = "submit"]:hover{
+    background: #2ecc71;
+}
