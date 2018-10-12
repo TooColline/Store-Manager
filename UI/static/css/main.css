@@ -102,6 +102,25 @@ a {
     color: black;
     background-color: #2ecc71;
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    background-color: lightgreen;
+}
+tr:hover {
+    background-color: #f0c0c0;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+}
+.sales-records {
+    overflow-x:auto;
+}
 .storeattendant-footer {
     display: flex;
     grid-area: footer;
