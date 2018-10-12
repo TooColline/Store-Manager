@@ -285,7 +285,6 @@ a {
 }
 .menu {
     list-style: none;
-    display: flex;
     padding: 0;
     margin: 0;
     justify-content: center;
@@ -299,6 +298,7 @@ a {
 }
 .login-menu {
     color: #fff;
+    display: flex;
 }
 .menu a:hover {
     color: rgba(19, 16, 16, 0.8);
