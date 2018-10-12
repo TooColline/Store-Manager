@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
     <script src="main.js"></script>
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="admin">
         <header class="admin-header">
             <a href="#" class="logo"><h1>Store Owner</h1></a>
             <div class="topnav-items">
-                <button class="btn btn--primary">Add Attendant</button>
-                <a href="#" class="logout">Log Out</a>
+                <a href="addstoreattendant.html"><button class="btn btn--primary">Add Attendant</button></a>
+                <a href="login.html" class="logout">Log Out</a>
             </div>
         </header>
         <nav class="sidenav">
@@ -26,13 +28,10 @@
                     <a href="addstoreattendant.html" class="menu-link">Add Store Attendant</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Create a Product</a>
+                    <a href="createproduct.html" class="menu-link">Create a Product</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Modify a Product</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Delete a Product</a>
+                    <a href="modifyproducts.html" class="menu-link">Modify a Product</a>
                 </li>
                 <li class="menu-item">
                     <a href="salerecords.html" class="menu-link">View All Sale Records</a>
@@ -41,7 +40,34 @@
         </nav>
         <main class="admin-main">
             <div class="dashboard">
-                
+                <div class="dashboard-item">
+                    <a href="addstoreattendant.html">
+                        <div class="card">
+                            <strong>6</strong> Add Store Attendant <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="dashboard-item">
+                    <a href="createproduct.html">
+                        <div class="card">
+                            <strong>6</strong> Create Product <i class="fa fa-inbox"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="dashboard-item">
+                    <a href="salerecords.html">
+                        <div class="card">
+                            <strong>6</strong> Sale Records <i class="fa fa-inbox"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="dashboard-item">
+                    <a href="modifyproducts.html">
+                        <div class="card">
+                            <strong>6</strong> Modify Products <i class="fa fa-inbox"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
         </main>
         <footer class="admin-footer">
