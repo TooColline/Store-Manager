@@ -6,7 +6,7 @@
     <title>Home - Store Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="UI/static/css/main.css"/>
-    <script src="main.js"></script>
+    <script src="UI/static/js/main.js"></script>
 </head>
 <body>
     <div class="grid-wrapper">
@@ -18,20 +18,27 @@
             </header>
             <nav class="main-nav">
                 <ul class="menu">
-                    <li> <a class="login-menu" href="UI/templates/admindash.html">Admin</a></li>
-                    <li> <a class="login-menu" href="UI/templates/storeattendant.html">Store Attendant</a></li>
+                    <!-- <li> <a class="login-menu" href="UI/templates/admindash.html">Admin</a></li>
+                    <li> <a class="login-menu" href="UI/templates/storeattendant.html">Store Attendant</a></li> -->
                 </ul>
             </nav>
             </div>
         </header>
-        <form action="login.html" method="post" class="boxcover">
+        <form id="login" class="boxcover">
             <h1>Welcome</h1>
-            <input type="text" name="" placeholder="Email...">
-            <input type="password" name="" placeholder="Password">
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-            <input type="button" name="" value="Login">
-            
+            <div id="message-box">
+            </div>
+            <div>
+            <input type="email" id="email" name="email" placeholder="Email...">
+            </div>
+            <div>
+            <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div>
+            <input type="submit" id="login-button" value="Log in">
+            </div>
         </form>
     </div>
+    <script src="UI/static/js/login.js"></script>
 </body>
 </html>
