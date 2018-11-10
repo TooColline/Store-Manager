@@ -50,7 +50,7 @@ login_button.addEventListener('click', (event) => {
             }
             if(userRole === 'attendant'){
                 // Redirect to attendant profile page
-                window.location.replace("UI/templates/myprofile.html");
+                window.location.replace("UI/templates/storeattendant.html");
             }
         else {
             message_box.innerHTML = message;
