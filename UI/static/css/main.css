@@ -238,6 +238,14 @@ tr:hover {
     border: 1px solid #ddd;
     margin-bottom: 12px;
 }
+#form-text {
+    border: 1px solid #999;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    width: 70%;
+    padding: 10px 0px;
+    text-align: center;
+}
 .sales-records {
     overflow-x:auto;
 }
