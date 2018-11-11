@@ -40,6 +40,8 @@ login_button.addEventListener('click', (event) => {
         console.log(json_response)
         let message = json_response.message;
         if(message === "Successfully logged in") {
+            message_box.style.color = "green";
+            message_box.innerHTML = `${message}`;
             // Save token and user role on the local storage
             let userRole = json_response.role;
             localStorage.userToken = json_response.token;
