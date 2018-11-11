@@ -2,7 +2,7 @@
 
 window.onload = function getProducts(e) {
     e.preventDefault();
-
+    let message_box = document.getElementById('message-box');
     let token = localStorage.userToken;
     fetch('https://a-store-manager-app-api-v2.herokuapp.com/api/v2/products',{
         method:'GET',
@@ -15,6 +15,9 @@ window.onload = function getProducts(e) {
     })
     .then((respose) => respose.json())
     .then((data) => {
+        if (data.Message == 'Sorry, there are no products in the database yet'){
+            message_box.innerHTML = message;
+        }
         let products = data.products;
         let productsTable = document.getElementById('records-table');
         th = `
@@ -25,6 +28,8 @@ window.onload = function getProducts(e) {
         <th>Min Quantity</th>
         <th>Inventory</th>
         <th>Category</th>
+        <th>Amount</th>
+        <th>Add to Cart</th>
         </tr>
         `
         productsTable.innerHTML = th
@@ -36,8 +41,13 @@ window.onload = function getProducts(e) {
                 '<td>'+product.min_quantity+'</td>'+
                 '<td>'+product.inventory+'</td>'+
                 '<td>'+product.category+'</td>'+
+                '<td><input type="number" min="1" class="form-text" placeholder="Amount" id="sale"></td>'+
+                '<td><input type="submit" class="btn btn--primary" value="Add to Cart"></td>'+
                 '</tr>';
         })
     })
-    .catch((err) => console.log(err))
+    .catch(function(err) {
+        console.log(err);
+        message_box.innerHTML = err;
+    });
 }
