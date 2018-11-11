@@ -28,8 +28,6 @@ window.onload = function getProducts(e) {
         <th>Min Quantity</th>
         <th>Inventory</th>
         <th>Category</th>
-        <th>Amount</th>
-        <th>Add to Cart</th>
         </tr>
         `
         productsTable.innerHTML = th
@@ -41,8 +39,6 @@ window.onload = function getProducts(e) {
                 '<td>'+product.min_quantity+'</td>'+
                 '<td>'+product.inventory+'</td>'+
                 '<td>'+product.category+'</td>'+
-                '<td><input type="number" min="1" class="form-text" placeholder="Amount" id="sale"></td>'+
-                '<td><input type="submit" class="btn btn--primary" value="Add to Cart"></td>'+
                 '</tr>';
         })
     })
