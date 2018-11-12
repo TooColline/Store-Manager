@@ -1,9 +1,9 @@
 // consume get sales endpoint 
-
+let token = localStorage.userToken;
 window.onload = function getSales(e) {
     e.preventDefault();
     let message_box = document.getElementById('message-box');
-    let token = localStorage.userToken;
+    
     fetch('https://a-store-manager-app-api-v2.herokuapp.com/api/v2/sales',{
         method:'GET',
         headers: {

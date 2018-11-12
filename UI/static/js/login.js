@@ -3,8 +3,6 @@ let url = "https://a-store-manager-app-api-v2.herokuapp.com/api/v2/auth/login";
 let login_button = document.getElementById('login-button');
 let message_box = document.getElementById('message-box');
 
-
-
 login_button.addEventListener('click', (event) => {
     event.preventDefault();
     // define the DOM variables to be used in the app

@@ -1,9 +1,10 @@
 // consume get product endpoint 
+let message_box = document.getElementById('message-box');
+let token = localStorage.userToken;
 
 window.onload = function getProducts(e) {
     e.preventDefault();
-    let message_box = document.getElementById('message-box');
-    let token = localStorage.userToken;
+    
     fetch('https://a-store-manager-app-api-v2.herokuapp.com/api/v2/products',{
         method:'GET',
         headers: {
