@@ -3,7 +3,8 @@
 window.onload = function getProducts(e) {
     e.preventDefault();
     let message_box = document.getElementById('message-box');
-    let token = localStorage.userToken;
+
+
     fetch('https://a-store-manager-app-api-v2.herokuapp.com/api/v2/products',{
         method:'GET',
         headers: {
@@ -54,7 +55,6 @@ window.onload = function getProducts(e) {
  
 let url = "https://a-store-manager-app-api-v2.herokuapp.com/api/v2/products";
 let message_box = document.getElementById('message-box');
-let token = localStorage.userToken;
 
 function getSingleProduct(product_id) {
     let editButton = document.getElementById(product_id).innerHTML;

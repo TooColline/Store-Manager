@@ -1,5 +1,4 @@
 // consume get sales endpoint 
-let token = localStorage.userToken;
 window.onload = function getSales(e) {
     e.preventDefault();
     let message_box = document.getElementById('message-box');

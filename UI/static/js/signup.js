@@ -2,7 +2,7 @@
 let url = "https://a-store-manager-app-api-v2.herokuapp.com/api/v2/auth/signup";
 let signup_button = document.getElementById('signup_button');
 let message_box = document.getElementById('message-box');
-let token = localStorage.userToken;
+
 
 signup_button.addEventListener('click', (event) => {
     message_box.innerHTML = "";

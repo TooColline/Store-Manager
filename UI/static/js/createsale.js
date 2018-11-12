@@ -2,7 +2,7 @@
 let url = "https://a-store-manager-app-api-v2.herokuapp.com/api/v2/sales";
 let addSale_button = document.getElementById('addSale_button');
 let message_box = document.getElementById('message-box');
-let token = localStorage.userToken;
+
 
 addSale_button.addEventListener('click', (event) => {
     message_box.innerHTML = "";

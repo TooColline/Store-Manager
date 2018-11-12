@@ -1,6 +1,5 @@
 // consume get product endpoint 
 let message_box = document.getElementById('message-box');
-let token = localStorage.userToken;
 
 window.onload = function getProducts(e) {
     e.preventDefault();

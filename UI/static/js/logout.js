@@ -1,5 +1,6 @@
 let logouturl = "https://a-store-manager-app-api-v2.herokuapp.com/api/v2/auth/logout";
 let logoutButton = document.getElementById("logoutButton");
+let token = localStorage.userToken;
 
 logoutButton.addEventListener('click', (event) => {
     event.preventDefault();

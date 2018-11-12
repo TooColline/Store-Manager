@@ -41,6 +41,7 @@ login_button.addEventListener('click', (event) => {
             message_box.style.color = "green";
             message_box.innerHTML = `${message}`;
             // Save token and user role on the local storage
+            let userRole = json_response.role;
             localStorage.userToken = json_response.token;
             localStorage.userRole = json_response.role;
             if(userRole === 'Admin'){
