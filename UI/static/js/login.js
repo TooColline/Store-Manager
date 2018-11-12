@@ -35,13 +35,12 @@ login_button.addEventListener('click', (event) => {
         }
     })
     .then(function(json_response) {
-        console.log(json_response)
         let message = json_response.message;
+        console.log(message);
         if(message === "Successfully logged in") {
             message_box.style.color = "green";
             message_box.innerHTML = `${message}`;
             // Save token and user role on the local storage
-            let userRole = json_response.role;
             localStorage.userToken = json_response.token;
             localStorage.userRole = json_response.role;
             if(userRole === 'Admin'){
@@ -52,12 +51,12 @@ login_button.addEventListener('click', (event) => {
                 // Redirect to attendant profile page
                 window.location.replace("UI/templates/storeattendant.html");
             }
-        else {
+        }else {
             message_box.innerHTML = message;
             login_button.value = "Login";
             login_button.disabled = false;
         }
-    }})
+    })
     .catch(function(error) {
         message_box.innerHTML = "Sorry. Reload page and try again";
         console.log(error);

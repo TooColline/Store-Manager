@@ -192,7 +192,6 @@ td, th {
     padding: 20px;
 }
 #message-box {
-    height: 1px;
     color: red;
     font-size: 14px;
     border-radius: 5px;
