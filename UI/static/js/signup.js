@@ -10,13 +10,11 @@ signup_button.addEventListener('click', (event) => {
     signup_button.value = "Signing up...";
     let signupEmail = document.getElementById('signup-email').value;
     let signupPassword = document.getElementById('signup-password').value;
-    let signupRole = document.getElementById('signup-role').value;
-    if(signupEmail && signupPassword && signupRole) {
+    if(signupEmail && signupPassword) {
         event.preventDefault();
         let data = {
             "email": signupEmail,
-            "password": signupPassword,
-            "role": signupRole
+            "password": signupPassword
     };
     // Send POST request to admin login page
     fetch(url, {

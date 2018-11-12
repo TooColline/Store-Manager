@@ -42,6 +42,8 @@ window.onload = function getProducts(e) {
                 '<td>'+product.category+'</td>'+
                 '</tr>';
         })
+        // console.log(products.length);
+        // document.getElementById('tproducts').innerHTML = products.length;
     })
     .catch(function(err) {
         console.log(err);
