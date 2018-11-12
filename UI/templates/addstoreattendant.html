@@ -6,15 +6,15 @@
     <title>Store Owner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
-    <script src="main.js"></script>
+    <script src="../static/js/main.js"></script>
 </head>
 <body>
     <div class="admin">
         <header class="admin-header">
-            <a href="#" class="logo"><h1>Store Owner</h1></a>
+            <a href="#" class="logo">Store Owner</a>
             <div class="topnav-items">
                 <a href="addstoreattendant.html"><button class="btn btn--primary">Add Attendant</button></a>
-                <a href="login.html" class="logout">Log Out</a>
+                <a href="#" id="logoutButton" class="logout">Log Out</a>
             </div>
         </header>
         <nav class="sidenav">
@@ -37,29 +37,31 @@
             </ul>
         </nav>
         <main class="admin-main">
-            <form action="">
+            <form>
                 <div class="container">
                     <h3>Please fill in this form to register a store attendant.</h3>
+                    <div id="message-box">
+
+                    </div><br>
                     <hr>
 
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="email" id="signup-email" placeholder="Enter Email" name="email" required>
                 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" required>
-                
-                    <label for="psw-repeat"><b>Confirm Password</b></label>
-                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="password" id="signup-password" placeholder="Enter Password" required>
                     <hr>
                 
                     <p>By creating this account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                    <button type="submit" class="btn btn--primary">Register</button>
+                    <button type="button" id="signup_button" class="btn btn--primary">Register</button>
                 </div>
             </form>
         </main>
         <footer class="admin-footer">
             <span>&copy; Store Manager 2018</span>
         </footer>
-     </div>
+    </div>
+    <script src="../static/js/signup.js"></script>
+    <script src="../static/js/logout.js"></script>
 </body>
 </html> 

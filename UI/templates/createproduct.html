@@ -6,15 +6,15 @@
     <title>Store Owner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/css/main.css" />
-    <script src="main.js"></script>
+    <script src="../static/js/main.js"></script>
 </head>
 <body>
     <div class="admin">
         <header class="admin-header">
-            <a href="#" class="logo"><h1>Store Owner</h1></a>
+            <a href="#" class="logo">Store Owner</a>
             <div class="topnav-items">
                 <a href="addstoreattendant.html"><button class="btn btn--primary">Add Attendant</button></a>
-                <a href="login.html" class="logout">Log Out</a>
+                <a href="#" id="logoutButton" class="logout">Log Out</a>
             </div>
         </header>
         <nav class="sidenav">
@@ -37,34 +37,30 @@
             </ul>
         </nav>
         <main class="admin-main">
-            <form action="">
+            <form>
                 <div class="container">
-                    <h3>Please fill in this form to register a product.</h3>
+                    <h3>Please fill in this form to add a product.</h3>
+                    <div id="message-box">
+
+                    </div>
                     <hr>
 
                     <label for="itemName"><b>Item Name</b></label>
-                    <input type="text" placeholder="Enter Item Name" name="itemName" required>
+                    <input type="text" id="name" placeholder="Enter Item Name" name="itemName" required>
                 
-                    <label for="price"><b>Cost Price</b></label>
-                    <input type="text" placeholder="Enter Item Price" name="price" required>
+                    <label for="price"><b>Item Price</b></label>
+                    <input type="number" id="price" placeholder="Enter Item Price" name="price" required>
 
-                    <label for="price"><b>Selling Price</b></label>
-                    <input type="text" placeholder="Enter Item Price" name="price" required>
+                    <label for="quantity"><b>Min Quantity</b></label>
+                    <input type="number" id="min_quantity" placeholder="Enter minimum quantity of the item the store can hold" name="quantity" required>
 
-                    <label for="quantity"><b>Quantity</b></label>
-                    <input type="text" placeholder="Enter Item Quantity" name="quantity" required>
+                    <label for="price"><b>Inventory</b></label>
+                    <input type="number" id="inventory" placeholder="Enter the number of items you are adding, it should not be more than the min quantity" name="inventory" required>
 
                     <label for="category"><b>Category</b></label><br>
-                    <div>
-                        <select name="selectCategory" id="selectCategory">
-                            <option value="">Clothing</option>
-                            <option value="">Shoes</option>
-                            <option value="">Electronics</option>
-                            <option value="">Accessories</option>
-                        </select>
-                    </div>
+                    <input type="text" id="category" placeholder="Enter Item Category" name="category" required>
                     <hr>
-                    <button type="submit" class="btn btn--primary">Add Product</button>
+                    <button type="submit" id="addProduct_button" class="btn btn--primary">Add Product</button>
                 </div>
             </form>
         </main>
@@ -72,5 +68,7 @@
             <span>&copy; Store Manager 2018</span>
         </footer>
      </div>
+     <script src="../static/js/addproduct.js"></script>
+     <script src="../static/js/logout.js"></script>
 </body>
 </html> 

@@ -40,42 +40,30 @@
             </ul>
         </nav>
         <main class="storeattendant-main">
-            <h2>My Profile</h2>
-            <div class="dashboard">
-                <div class="dashboard-item">
-                    <!-- <a href="salesrecords.html">
-                        <div class="card">
-                            <strong>6</strong> Total Sale Records <i class="fa fa-shopping-cart"></i>
-                        </div>
-                    </a> -->
+            <form>
+                <div class="container">
+                    <h3>Please fill in this form to create a sale.</h3>
+                    <div id="message-box">
+
+                    </div><br>
+                    <hr>
+
+                    <label for="name"><b>Item Name</b></label>
+                    <input type="text" id="name" placeholder="Enter item name" name="name" required>
+                
+                    <label for="quantity"><b>Quantity</b></label>
+                    <input type="number" min="1" id="quantity" placeholder="Enter quantity of the product you want to sale" required>
+
+                    <hr>
+                    <button type="button" id="addSale_button" class="btn btn--primary">Add to Cart</button>
                 </div>
-                <div class="dashboard-item">
-                    <a href="allproducts.html">
-                        <div class="card">
-                            <strong></strong> Available Products <i class="fa fa-inbox"></i>
-                        </div>
-                    </a>
-                </div>
-                <!-- <div class="dashboard-item">
-                    <a href="#">
-                        <div class="card">
-                            <strong>6</strong> Total Products Sold <i class="fa fa-inbox"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="dashboard-item">
-                    <a href="#">
-                        <div class="card">
-                            <strong>KSh. 20000</strong> Total Worth Sold
-                        </div>
-                    </a>
-                </div> -->
-            </div>
+            </form>
         </main>
         <footer class="storeattendant-footer">
             <span>&copy; Store Manager 2018</span>
         </footer>
     </div>
+    <script src="../static/js/createsale.js"></script>
     <script src="../static/js/logout.js"></script>
 </body>
 </html>

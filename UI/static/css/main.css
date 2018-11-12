@@ -191,7 +191,15 @@ td, th {
 .container {
     padding: 20px;
 }
-input[type=text], input[type=password] {
+#message-box {
+    height: 1px;
+    color: red;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+input[type=email], input[type=password], input[type=text], input[type=number] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -199,9 +207,17 @@ input[type=text], input[type=password] {
     border: none;
     background: #f1f1f1;
 }
-input[type=text]:focus, input[type=password]:focus {
+input[type=email]:focus, input[type=text]:focus, input[type=number]:focus, input[type=password]:focus {
 background-color: #ddd;
 outline: none;
+}
+.deleteButton {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #EC5840;
+    color: #fff;
 }
 hr {
 border: 1px solid #f1f1f1;
@@ -229,6 +245,14 @@ tr:hover {
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
+}
+#form-text {
+    border: 1px solid #999;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    width: 70%;
+    padding: 10px 0px;
+    text-align: center;
 }
 .sales-records {
     overflow-x:auto;
@@ -434,7 +458,7 @@ tr:hover {
     text-transform: uppercase;
     font-weight: 500;
 }
-.boxcover input[type = "text"], .boxcover input[type = "password"] {
+.boxcover input[type = "email"], .boxcover input[type = "text"], .boxcover input[type = "text"], .boxcover input[type = "password"] {
     border: 0;
     background: none;
     display: block;
@@ -448,7 +472,7 @@ tr:hover {
     border-radius: 24px;
     transition: 0.25s;
 }
-.boxcover input[type = "text"]:focus, .boxcover input[type = "password"]:focus {
+.boxcover input[type = "email"]:focus, .boxcover input[type = "text"]:focus, .boxcover input[type = "text"]:focus, .boxcover input[type = "password"]:focus {
     width: 280px;
     border-color: #2ecc71;
 }
