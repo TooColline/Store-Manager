@@ -13,7 +13,7 @@
 <body>
     <div class="store-attendant">
         <header class="storeattendant-header">
-            <a href="#" class="logo"><h1>Store Owner</h1></a>
+            <a href="#" class="logo">Store Owner</a>
             <div class="topnav-items">
                 <a href="addstoreattendant.html"><button class="btn btn--primary">Add Attendant</button></a>
                 <a href="#" class="profile">Profile</a>
@@ -29,113 +29,30 @@
                     <a href="addstoreattendant.html" class="menu-link">Add Store Attendant</a>
                 </li>
                 <li class="menu-item">
-                    <a href="salesrecords.html" class="menu-link">Sale Records</a>
+                    <a href="createproduct.html" class="menu-link">Create a Product</a>
                 </li>
                 <li class="menu-item">
-                    <a href="allproducts.html" class="menu-link">All products</a>
+                    <a href="modifyproducts.html" class="menu-link">Modify a Product</a>
                 </li>
                 <li class="menu-item">
-                    <a href="modifyproducts.html" class="menu-link">Modify Products</a>
+                    <a href="salerecords.html" class="menu-link">View All Sale Records</a>
                 </li>
             </ul>
         </nav>
         <main class="storeattendant-main">
             <h2>All Products</h2>
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search individual products by name..">
-            <table id="sales-records">
-                <tr>
-                    <th>Item ID</th>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Cost Price</th>
-                    <th>Selling Price</th>
-                    <th>Qtty (Inventory)</th>
-                    <th>Qtty (Allowed)</th>
-                    <th>Actions</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Shoes</td>
-                    <td>Clothing</td>
-                    <td>KSh. 1000</td>
-                    <td>KSh. 1100</td>
-                    <td>2</td>
-                    <td>10</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Handbag</td>
-                    <td>Accessories</td>
-                    <td>KSh. 2000</td>
-                    <td>KSh. 2100</td>
-                    <td>2</td>
-                    <td>20</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Belt</td>
-                    <td>Clothing</td>
-                    <td>KSh. 800</td>
-                    <td>KSh. 850</td>
-                    <td>6</td>
-                    <td>50</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Shirt</td>
-                    <td>Clothing</td>
-                    <td>KSh. 1500</td>
-                    <td>KSh. 1500</td>
-                    <td>6</td>
-                    <td>30</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Cooking oil</td>
-                    <td>Food</td>
-                    <td>KSh. 450</td>
-                    <td>KSh. 450</td>
-                    <td>10</td>
-                    <td>70</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Shower Heater</td>
-                    <td>Electronics</td>
-                    <td>KSh. 1350</td>
-                    <td>KSh. 1400</td>
-                    <td>2</td>
-                    <td>20</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
-                </tr>
+            <div id="message-box">
+
+            </div>
+            <table id="records-table">
+                
             </table>
         </main>
         <footer class="storeattendant-footer">
             <span>&copy; Store Manager 2018</span>
         </footer>
     </div>
+    <script src="../static/js/getproductedit.js"></script>
 </body>
 </html>
