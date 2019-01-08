@@ -7,6 +7,7 @@ Store Manager is a web application that helps store owners manage sales and prod
 3.  Launch index.html on your browser and try it out. or
 4.  Just launch the GitHub pages link ```https://toocolline.github.io/Store-Manager/```
 
-**Background context you want to provide?**
+**Background context**
+
 The default admin details are ```Email: defaultadmin@gmail.com, Password: 123456```
 A sample store attendant details are ```Email: user@gmail.com, Password: Password2#```
