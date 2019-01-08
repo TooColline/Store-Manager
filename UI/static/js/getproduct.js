@@ -28,10 +28,12 @@ window.onload = function getProducts(e) {
         <th>Min Quantity</th>
         <th>Inventory</th>
         <th>Category</th>
+        <th>Add to Cart</th>
         </tr>
-        `
+        ` 
         productsTable.innerHTML = th
         products.forEach(product => { 
+            var pname = product.name;
             productsTable.innerHTML += '<tr>'+
                 '<td>'+product.product_id+'</td>'+
                 '<td>'+product.name+'</td>'+
@@ -39,6 +41,7 @@ window.onload = function getProducts(e) {
                 '<td>'+product.min_quantity+'</td>'+
                 '<td>'+product.inventory+'</td>'+
                 '<td>'+product.category+'</td>'+
+                '<td><a onClick="buildCart('+product.product_id+',\''+pname+'\','+product.price+')" class="btn btn--primary">Add to Cart</div></a></td>'+
                 '</tr>';
         })
         // console.log(products.length);
