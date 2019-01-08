@@ -10,4 +10,5 @@ Store Manager is a web application that helps store owners manage sales and prod
 **Background context**
 
 The default admin details are ```Email: defaultadmin@gmail.com, Password: 123456```
+
 A sample store attendant details are ```Email: user@gmail.com, Password: Password2#```
